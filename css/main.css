@@ -24,7 +24,7 @@ section {
 }
 
 .dipper {
-	width 300px;
+	width: 300px;
 	opacity: 0;
 }
 
@@ -35,6 +35,32 @@ section {
 @-webkit-keyframes dipper-fade {
 	0% {
 		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.shuttle-section {
+	background: #ffbb00 no-repeat center bottom;
+	background-size: cover;
+}
+
+.shuttle {
+	width: 300px;
+	opacity: 0;
+	position: relative;
+	top: -10em;
+}
+
+.js-shuttle-fade {
+	-webkit-animation: shuttle-fade 1s linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		top: 10em;
 	}
 	100% {
 		opacity: 1;
